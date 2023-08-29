@@ -1,0 +1,37 @@
+/*Get the code for the following output.....
+*
+**
+***
+****
+***
+**
+*
+for odd rows....*/
+
+
+#include<stdio.h>
+int main()
+{
+	int r,i,j,s,n,m=1;
+	printf("Enter the no of rows in odd number:");
+	scanf("%d",&r);
+	s=r/2+1;
+	for(i=1;i<=s;i++)
+	{
+		for(j=0;j<i;j++)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+	for(n=s+1;n<=r;n++)
+	{
+		for(m=1;m<s;m++)
+		{
+			printf("*");
+		}
+		printf("\n");
+		s--;
+		m=1;
+	}
+}
