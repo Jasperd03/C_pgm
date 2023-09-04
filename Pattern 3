@@ -1,0 +1,67 @@
+/* Write for the code for the following output for n=even numbers....
+
+*                  *
+*  *            *  *
+*    *        *    *
+*      *    *      *
+*        **        *
+*                  *
+*                  *
+*                  *
+*                  *
+*                  *
+
+*/
+
+
+#include<stdio.h>
+int main()
+{	
+	int rows,s,j=1,k,a,f,d,p,i;
+	printf("Enter the no.of rows in even num:");
+	scanf("%d",&rows);
+	s=rows/2;
+	printf("*");
+	for(i=0;i<rows-1;i++)
+	{
+		printf("  ");
+	}
+	printf("*");
+	printf("\n");
+	for(a=s-2;a>=0;a--)
+	{
+		d=2*a;
+		printf("*");
+		for(p=1;p<=j;p++)
+		{
+			printf("  ");
+		}
+		printf("*");
+		for(k=1;k<=d;k++)
+		{
+			printf("  ");
+		}
+		printf("*");
+		for(p=1;p<=j;p++)
+		{
+			printf("  ");
+		}
+		j++;
+		printf("*");
+		printf("\n");
+	}
+	for(i=1;i<=rows/2;i++)
+	{
+		int r=rows-1;
+		printf("*");
+		for(j=0;j<r;j++)
+		{
+			printf("  ");
+		}
+		printf("*");
+		printf("\n");
+	}
+}
+          
+              
+           
