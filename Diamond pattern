@@ -1,0 +1,47 @@
+/* Write the code for the following output.....for n=7
+
+           *
+         *   *
+       *   *   *
+     *   *   *   *
+       *   *   *
+         *   *
+           *
+
+*/
+
+#include<stdio.h>
+int main()
+{
+    int rows=7,x,i,j,a,half_rows,p,g,k,y,half_rows1;
+    half_rows1=rows/2;
+    y=rows/2;
+    half_rows=rows/2+1;
+    x=rows/2+1;
+    for(i=1;i<=x;i++)
+    {
+        for(j=half_rows;j>=1;j--)
+        {
+            printf("  ");
+        }
+        half_rows--;
+        for(a=1;a<=i;a++)
+        {
+            printf("%4s","*");
+        }
+        printf("\n");
+    }
+    for(p=half_rows1;p>=1;p--)
+    {
+        for(k=p;k<=y+1;k++)
+        {
+            printf("  ");
+        }
+        
+        for(g=p;g>=1;g--)
+        {
+            printf("%4s","*");
+        }
+        printf("\n");
+    }
+}
