@@ -1,0 +1,22 @@
+/* Write the code for the following output for n=5
+
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+
+*/
+
+#include<stdio.h>
+void main()
+{
+    int i,n=1,j,rows=4;
+    for(i=1;i<=rows;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d ",n++);
+        }
+        printf("\n");
+    }
+}
