@@ -1,0 +1,24 @@
+//kth element of good prime number from the given start element
+
+#include<stdio.h>
+void main()
+{
+    int start=4,k=4,a,b,c,i,x=0,newarr[20];
+    for(int i=start;i<=50;i++)
+    {
+        a=i/10;
+        b=i%10;
+        c=a+b;
+        if(c==2||c==3||c==5||c==7)
+        {
+            newarr[x]=i;
+            x++;
+        }
+    }
+    for (int j = 0; j < x; j++)
+    {
+        printf("%d ", newarr[j]);
+    }
+    printf("\n");
+    printf("The kth element is:%d",newarr[k-1]);
+}
